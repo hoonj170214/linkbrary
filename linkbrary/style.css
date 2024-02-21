@@ -115,32 +115,29 @@ h1 {
 }
 
 /* 랜딩페이지 강조문구 그라데이션  */
-.highlight-01 {
+/* 기본형 */
+.highlight {
+  color: transparent;
+  background-clip: text;
+}
+/* 변형 */
+.puplePink {
   background-image: linear-gradient(90deg, #6d6afe, #ff9f9f);
-  color: transparent;
-  background-clip: text;
 }
-.highlight-02 {
+.redSkyblue {
   background-image: linear-gradient(90deg, #fe8a8a, #a4ceff);
-  color: transparent;
-  background-clip: text;
 }
-.highlight-03 {
+.skyblueYellow {
   background-image: linear-gradient(90deg, #6fbaff, #ffd88b);
-  color: transparent;
-  background-clip: text;
 }
-.highlight-04 {
+.pupleBlack {
   background-image: linear-gradient(90deg, #6d7ccd, #52888538);
-  color: transparent;
-  background-clip: text;
 }
-.highlight-05 {
+.pinkSkyblue {
   background-image: linear-gradient(90deg, #fe578f, #68e8f9);
-  color: transparent;
-  background-clip: text;
 }
 
+/* 첫 이미지 */
 .contents-01--img {
   width: 1200px;
   height: 590px;
@@ -163,30 +160,28 @@ h1 {
   color: #6b6b6b;
 }
 
+/* 상세 이미지 */
 .content--img {
   width: 550px;
   height: 450px;
   border-radius: 15px;
 }
 
-.contents-02,
-.contents-04 {
+/* 상세 글(기본형)  */
+.contents {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 135px;
   margin: 100px;
 }
-
-.contents-03,
-.contents-05 {
-  display: flex;
+/* 좌측 글 */
+.left {
+  flex-direction: row;
+}
+/* 우측 글 */
+.right {
   flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  gap: 135px;
-  margin: 100px;
 }
 
 /* footer */
